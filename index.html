@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASON and APIs</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- More specifically, you need to create a HTML file with an input field to specify the address, 
+        a button to execute the query and process the data, and a table where the data will be displayed. -->
+    <!-- first -->
+
+    <h1>Weather Forecast</h1>
+    <label for="addressInput">Enter an address:</label>
+    <input type="text" id="addressInput" name="addressInput" placeholder="Lars Hilles gate 30" value="Lars Hillas gate 30">
+    <button id="getWeatherBtn" type="submit">Get Weather</button>
+    <p id="errorMessage"></p>
+
+    
+    <table id="weatherTable">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Temperature</th>
+                <th>Preciptation</th>
+                <th>Weather</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Weather data will be inserted here -->
+        </tbody>
+    </table>
+    
+
+    <script src="js/scripts.js"></script>
+    
+</body>
+</html>
