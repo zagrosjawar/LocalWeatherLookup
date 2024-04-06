@@ -1,0 +1,77 @@
+        body {
+            margin: 0;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        * {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        #addressInput {
+            width: 60%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        #getWeatherBtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+        #getWeatherBtn:hover {
+            background-color: #4ad351;
+        }
+        .address {
+            text-align: center;
+            font-size: normal;
+            border-bottom: 1px solid #54824f;
+            padding: 5px;
+            background-color: #4ebd82;
+
+        }
+
+        /* Error message styling */
+        #errorMessage {
+            color: red;
+            text-align: center;
+            font-size: small;
+        }
+
+        /* Table styling */
+        #weatherTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #weatherTable th, #weatherTable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        #weatherTable tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        #weatherTable th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: #6cac6e;
+            color: white;
+        }
+
+        .weatherIcon {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Responsive table */
+        @media screen and (max-width: 600px) {
+            #weatherTable th, #weatherTable td {
+                padding: 4px;
+            }
+        }
+
+        /* End of CSS */
