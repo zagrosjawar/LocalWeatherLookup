@@ -26,7 +26,16 @@
         #getWeatherBtn:hover {
             background-color: #4ad351;
         }
+        .address {
+            text-align: center;
+            font-size: normal;
+            border-bottom: 1px solid #54824f;
+            padding: 5px;
+            background-color: #4ebd82;
 
+        }
+
+        /* Error message styling */
         #errorMessage {
             color: red;
             text-align: center;
