@@ -20,7 +20,7 @@ function getCoordinates(address) {
     fetch(coordinatesUrl)
         .then(response => response.json())
         .then(data => {
-            // console.log("coordinate data: ", data);
+            console.log("coordinate data: ", data);
             if (data.adresser && data.adresser.length > 0) {
                 const coords = {
                     latitude: data.adresser[0].representasjonspunkt.lat,
@@ -90,4 +90,55 @@ function displayWeatherData(weatherData) {
 
 });
 }
-// End of the script.js file
+// second iteration of the project development
+// showing the weather where the user is located and the address of the user
+
+// a function to check if the GeoLocation API is available in the browser. If it is, get the user's location
+function getLocationAndWeather() {
+    if ("geolocation" in navigator) { 
+        navigator.geolocation.getCurrentPosition(function (position) {
+            //console.log("User's location: ", position.coords.latitude, position.coords.longitude);
+            getWeather(position.coords.latitude, position.coords.longitude); // get the weather for the user's location
+            getAddress(position.coords.latitude, position.coords.longitude); // get the address for the user's location
+        }, function (error) {
+            document.getElementById("errorMessage").textContent = "Geolocation error: " + error.message;
+        });
+    } else {
+        document.getElementById("errorMessage").textContent = "Geolocation is not supported by your browser";
+    }
+}
+// Call this function when the page loads
+getLocationAndWeather();
+
+
+
+// a function to get the address for the user's location
+function getAddress(latitude, longitude, radius=100) {
+    const geoUrl = `https://ws.geonorge.no/adresser/v1/punktsok?lat=${latitude}&lon=${longitude}&radius=${radius}`
+
+
+    console.log("Reverse geocode URL: ", geoUrl);
+    fetch(geoUrl)
+        .then(response => response.json())
+    
+        .then(data => { 
+            if (data.adresser && data.adresser.length > 0) {
+                const address = data.adresser[0].adressetekst;
+                console.log("Address: ", address);
+                // Here, update your UI with the address
+                // adding class="address" to the p element with id="address" to style the address
+                document.getElementById("address").className = "address";
+                document.getElementById("address").innerHTML = "Checking weather for: " + address;
+            } else {
+                document.getElementById("errorMessage").textContent = "No address found at this location";
+            }
+
+            
+        })
+    
+        .catch(error => {
+            document.getElementById("errorMessage").textContent = "Error fetching address: " + error.message;
+        });
+}
+
+// End
