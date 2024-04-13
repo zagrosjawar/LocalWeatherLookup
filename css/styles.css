@@ -74,4 +74,27 @@
             }
         }
 
+        /* Footer styling */
+        footer {
+            background-color: #2c3e50; /* Dark blue background */
+            color: #ffffff; /* White text color */
+            text-align: center; /* Center-align the text */
+            padding: 20px 0; /* Padding above and below the text */
+            margin-top: 40px; /* Adds space between the footer and the content above it */
+            position: relative; /* Ensures the footer can be manipulated in context (e.g., bottom of the page) */
+            bottom: 0; /* Aligns the footer at the bottom of its container */
+            width: 100%; /* Ensures the footer stretches across the width of its container */
+        }
+        
+        footer a {
+            color: #f39c12; /* Orange color for the link for high visibility */
+            text-decoration: none; /* No underline */
+            font-weight: bold; /* Makes the font bold */
+        }
+        
+        footer a:hover {
+            text-decoration: underline; /* Underline on hover for better interaction feedback */
+        }
+
+
         /* End of CSS */
