@@ -19,14 +19,12 @@ Weather Data Explorer is an educational web application designed to demonstrate 
 - Fetch API for asynchronous HTTP requests
 - Geonorge's Address API and Meteorological Institute's Weather API for data retrieval
 
-## Setup or to run the project
+## Run the project
+Check out [Local Weather Lookup ](https://zagrosjawar.github.io/LocalWeatherLookup)
 
 
 ## Contributing
 Feel free to fork this repository and submit pull requests to contribute to this project. You can also send me a message if you have any questions or would like to discuss the project further.
-
-## License
-This project is open-sourced under the MIT license. See the LICENSE file for more information.
 
 ## Contact
 If you have any questions or feedback, please contact me at zagros.jawar@gmail.com
