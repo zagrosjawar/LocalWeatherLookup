@@ -1,9 +1,35 @@
-# LocalWeatherLookup
-LocalWeatherLookup is a web-based application designed to provide real-time weather forecasts for any specified location. Utilizing the latest APIs for accurate meteorological data and geographical coordinates, it offers users detailed insights into temperature, precipitation, and other weather-related parameters. 
+# Local Weather Lookup
+
+## Overview
+
+Weather Data Explorer is an educational web application designed to demonstrate the integration and processing of weather and geographical data via external APIs. It provides a user-friendly interface to input an address, which the application uses to fetch and display corresponding weather details.
+
+## Features
+
+- **Address Input**: Users can type in any address, which is used to fetch latitude and longitude coordinates through the Adresser API.
+- **Weather Forecast Retrieval**: The application uses the obtained geographic coordinates to query a weather service and retrieve forecast data.
+- **Customizable Display**: The web page dynamically displays weather information such as temperature, precipitation probability, and weather conditions.
+- **Learning Tool**: The source code serves as a learning resource for understanding how to work with APIs, JSON data, and dynamic HTML content with JavaScript.
+
+## Technologies Used
+
+- HTML5
+- CSS3 for stylish and responsive design
+- Vanilla JavaScript for API interaction and DOM manipulation
+- Fetch API for asynchronous HTTP requests
+- Geonorge's Address API and Meteorological Institute's Weather API for data retrieval
+
+## Setup or to run the project
 
 
-This repository contains my project for the MIX114 Web Development course, focusing on utilizing JSON and Web APIs to fetch and display weather data. 
+## Contributing
+Feel free to fork this repository and submit pull requests to contribute to this project. You can also send me a message if you have any questions or would like to discuss the project further.
 
-Through this assignment, I've developed a web application that showcases my skills in HTML, CSS, JavaScript, and the practical use of APIs. 
+## License
+This project is open-sourced under the MIT license. See the LICENSE file for more information.
 
-The project demonstrates how to retrieve real-time weather information for any given location and present it in a user-friendly format. It's designed to highlight my abilities in creating interactive web experiences and leveraging external data sources effectively.
+## Contact
+If you have any questions or feedback, please contact me at zagros.jawar@gmail.com
+
+---
+Project by Zagros Jawar
